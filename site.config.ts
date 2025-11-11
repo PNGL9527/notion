@@ -15,9 +15,6 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
-
-  // open table of contents
-  isTableOfContentsEnabled: true,
   
   // social usernames (optional)
   twitter: 'transitive_bs',
@@ -65,4 +62,5 @@ export default siteConfig({
   //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
   //   }
   // ]
+  showTableOfContents: true
 })
