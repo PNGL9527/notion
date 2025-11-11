@@ -16,6 +16,9 @@ export default siteConfig({
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
 
+  // open table of contents
+  isTableOfContentsEnabled: true,
+  
   // social usernames (optional)
   twitter: 'transitive_bs',
   github: 'transitive-bullshit',
