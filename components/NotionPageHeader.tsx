@@ -78,7 +78,15 @@ export function NotionPageHeader({
               }
             })
             .filter(Boolean)}
-          
+
+            {/* ✅ My CV 按钮 */}
+            <components.Link
+            href="/Peng%20Lu_CV_EN%26IT.pdf"
+            className={cs(styles.navLink, 'breadcrumb', 'button')}
+            >
+            My CV
+            </components.Link>
+            
           <ToggleThemeButton />
 
           {isSearchEnabled && <Search block={block} title={null} />}
