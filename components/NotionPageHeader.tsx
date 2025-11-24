@@ -71,6 +71,8 @@ export function NotionPageHeader({
                     href={link.url}
                     key={index}
                     className={cs(styles.navLink, 'breadcrumb', 'button')}
+                    target="_blank" // ✅ 新标签页打开
+                    rel="noopener noreferrer" // 安全建议
                   >
                     {link.title}
                   </components.Link>
