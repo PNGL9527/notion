@@ -404,23 +404,4 @@
   align-items: center;
 }
 
-/* -------------------------------------------------------------------------------- */
-/* 修复：仅针对主页 (Block ID: 292813165f4880498f18d66199a5ce2c) 上的分栏实现等宽 33.33% */
-/* -------------------------------------------------------------------------------- */
 
-/* 1. 锁定主页的根容器，并确保分栏行使用 Flexbox */
-/* 注意：这里我们使用 .notion-block-ID 的形式，因为你的 CSS 中有先例 */
-.notion-block-292813165f4880498f18d66199a5ce2c .notion-page-content .notion-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* 2. 强制该页面内部的分栏列为 33.33% 宽度 */
-.notion-block-292813165f4880498f18d66199a5ce2c .notion-page-content .notion-column {
-  width: 33.33% !important; 
-  /* 确保内边距不会撑大列宽 */
-  box-sizing: border-box; 
-  /* 增加左右间距，让卡片有间隔 */
-  padding: 0 0.5rem; 
-  min-width: 0;
-}
